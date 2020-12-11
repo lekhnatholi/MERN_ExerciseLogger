@@ -6,9 +6,7 @@ const mongoose = require('mongoose');
 app.use(cors());
 app.use(express.json());
 
-// const uri = process.env.ATLAS_URI;
-// const uri = `mongodb + srv://lekhu:lekhu@123@cluster0.wjjin.mongodb.net/ExerciseLogger?retryWrites=true&w=majority`;
-const uri = "mongodb+srv://lekhu:lekhu@123@cluster0.wjjin.mongodb.net/ExerciseLogger?retryWrites=true&w=majority";
+const uri = process.env.ATLAS_URI;
 const connectionParams = {
     useNewUrlParser: true,
     useCreateIndex: true,
